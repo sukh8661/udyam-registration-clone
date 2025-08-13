@@ -29,11 +29,11 @@ A full-stack recreation of the Indian government's Udyam Registration portal wit
 
 ## 📁 Project Structure
 
-udyam-registration-clone/
-├── frontend/ # Next.js React application
-├── backend/ # Node.js Express API
-├── scraper/ # Python web scraper
-└── docker-compose.yml # Docker configuration
+udyam-registration-clone/           
+├── frontend/ # Next.js React application                 
+├── backend/ # Node.js Express API               
+├── scraper/ # Python web scraper                 
+└── docker-compose.yml # Docker configuration              
 
 ## 🎯 Usage
 
