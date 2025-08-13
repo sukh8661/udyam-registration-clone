@@ -1,0 +1,271 @@
+.main {
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.header {
+  background: #1f4e79;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  opacity: 0.9;
+}
+
+/* Progress Tracker */
+.progressContainer {
+  padding: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.progressBar {
+  width: 100%;
+  height: 6px;
+  background: #e9ecef;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progressFill {
+  height: 100%;
+  background: #28a745;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.stepIndicators {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.stepIndicator {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #6c757d;
+  transition: all 0.3s ease;
+}
+
+.stepIndicator.completed {
+  background: #28a745;
+  color: white;
+}
+
+.stepText {
+  text-align: center;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+/* Form Styles */
+.formContainer {
+  padding: 40px;
+}
+
+.formContainer h2 {
+  margin-bottom: 30px;
+  color: #1f4e79;
+  font-size: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.inputGroup input,
+.inputGroup select {
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus {
+  outline: none;
+  border-color: #1f4e79;
+  box-shadow: 0 0 0 3px rgba(31, 78, 121, 0.1);
+}
+
+.inputError {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1) !important;
+}
+
+.errorMessage {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+.otpButton {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 10px;
+  width: fit-content;
+  transition: background 0.2s ease;
+}
+
+.otpButton:hover:not(:disabled) {
+  background: #218838;
+}
+
+.otpButton:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.otpInfo {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.prevButton,
+.nextButton {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 120px;
+}
+
+.prevButton {
+  background: #6c757d;
+  color: white;
+}
+
+.prevButton:hover:not(:disabled) {
+  background: #545b62;
+}
+
+.nextButton {
+  background: #1f4e79;
+  color: white;
+}
+
+.nextButton:hover:not(:disabled) {
+  background: #1a4066;
+}
+
+.nextButton:disabled,
+.prevButton:disabled {
+  background: #adb5bd;
+  cursor: not-allowed;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+    border-radius: 0;
+  }
+  
+  .header {
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .progressContainer,
+  .formContainer {
+    padding: 20px;
+  }
+  
+  .formContainer h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+  .buttonGroup {
+    flex-direction: column;
+  }
+  
+  .prevButton,
+  .nextButton {
+    width: 100%;
+  }
+  
+  .stepIndicator {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .inputGroup input,
+  .inputGroup select {
+    padding: 10px 12px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  .header {
+    padding: 15px;
+  }
+  
+  .header h1 {
+    font-size: 1.3rem;
+  }
+  
+  .progressContainer,
+  .formContainer {
+    padding: 15px;
+  }
+}
