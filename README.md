@@ -8,8 +8,8 @@ A full-stack recreation of the Indian government's Udyam Registration portal wit
 
 ## 🌟 Live Demo
 
-- **Frontend**: [https://udyam-registration-clone.vercel.app](https://udyam-registration-clone.vercel.app)
-- **GitHub**: [https://github.com/sukh8661/udyam-registration-clone](https://github.com/sukh8661/udyam-registration-clone)
+- **Frontend**: [Live Demo](https://udyam-registration-form-clone.vercel.app)
+- **GitHub**: [Udyam Registration Form Clone](https://github.com/sukh8661/udyam-registration-clone)
 
 ## ✨ Features
 
